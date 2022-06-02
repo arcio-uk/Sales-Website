@@ -35,6 +35,7 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'no-unused-vars': 0,
     'react/jsx-filename-extension': 0,
+    'react/button-has-type': 0,
     'jsx-a11y/anchor-is-valid': 0,
     'jsx-a11y/alt-text': 0,
     'no-bitwise': 0,
