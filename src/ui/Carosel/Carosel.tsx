@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useKeenSlider } from 'keen-slider/react';
 import './carosel.css';
 import 'keen-slider/keen-slider.min.css';
@@ -11,15 +11,25 @@ export interface CaroselProps {
 const Carosel = ({ children }: CaroselProps) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
+  const [lastChanged, setLastChanged] = useState(Date.now());
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     initial: 0,
+    loop: true,
     slideChanged(slider) {
       setCurrentSlide(slider.track.details.rel);
+      setLastChanged(Date.now());
     },
     created() {
       setLoaded(true);
     },
   });
+
+  // set a delay for changing the carosel slide
+  useEffect(() => {
+    setTimeout(() => {
+
+    }, 10000);
+  }, [lastChanged]);
 
   return (
     <div>
@@ -32,15 +42,9 @@ const Carosel = ({ children }: CaroselProps) => {
           <Arrow
             left
             onClick={(e: any) => e.stopPropagation() || instanceRef.current?.prev()}
-            disabled={currentSlide === 0}
           />
-
           <Arrow
             onClick={(e: any) => e.stopPropagation() || instanceRef.current?.next()}
-            disabled={
-                currentSlide
-                === instanceRef.current.track.details.slides.length - 1
-              }
           />
         </>
         )}
