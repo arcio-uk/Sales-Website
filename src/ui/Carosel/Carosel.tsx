@@ -27,7 +27,7 @@ const Carosel = ({ children }: CaroselProps) => {
   // set a delay for changing the carosel slide
   useEffect(() => {
     setTimeout(() => {
-
+      instanceRef.current?.next();
     }, 10000);
   }, [lastChanged]);
 
