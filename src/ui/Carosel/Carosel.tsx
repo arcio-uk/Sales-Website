@@ -12,6 +12,7 @@ const Carosel = ({ children }: CaroselProps) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
   const [lastChanged, setLastChanged] = useState(Date.now());
+  let nextSlideTimeout:number | null = null;
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     initial: 0,
     loop: true,
@@ -26,9 +27,14 @@ const Carosel = ({ children }: CaroselProps) => {
 
   // set a delay for changing the carosel slide
   useEffect(() => {
-    setTimeout(() => {
-      instanceRef.current?.next();
-    }, 10000);
+    if (nextSlideTimeout) clearTimeout(nextSlideTimeout);
+    nextSlideTimeout = window.setTimeout(() => {
+      requestAnimationFrame(() => {
+        if (Date.now() - lastChanged > 3000) {
+          instanceRef.current?.next();
+        }
+      });
+    }, 3000);
   }, [lastChanged]);
 
   return (
