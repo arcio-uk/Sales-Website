@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useKeenSlider } from 'keen-slider/react';
-import '@/ui/carosel.css';
+import './carosel.css';
 import 'keen-slider/keen-slider.min.css';
 import Arrow from './Arrow';
 
