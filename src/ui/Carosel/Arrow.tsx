@@ -5,8 +5,8 @@ const Arrow = (props: {
   const { left, onClick } = props;
 
   return (
-    <div onClick={onClick} className="arrowContainer h-full w-10 cursor-pointer">
-      <div className={`arrow ${left ? 'arrow--left' : 'arrow--right'}`}>
+    <div onClick={onClick} className={`arrowContainer h-full w-10 cursor-pointer ${left ? 'arrow--left' : 'arrow--right'}`}>
+      <div className="arrow">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
