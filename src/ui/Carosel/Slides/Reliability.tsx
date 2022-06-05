@@ -4,10 +4,12 @@ import {
 
 const Reliability = () => (
   <div className="keen-slider__slide text-center bg-gradient-to-r from-orange-500 to-pink-600 flex w-screen items-center">
-    <div className="text-white text-5xl flex sm:flex-col space-x-5 w-4/5 content-center justify-center mx-auto">
-      <div className="flex-2 my-auto">Reliable boi</div>
-      <div className="flex-2 text-2xl my-auto mx-16"> We think reliability is good</div>
-      <AiFillApi className="w-36 h-36 flex-1 m-auto" />
+    <div className="text-white text-5xl flex xl:flex-row flex-col w-4/5 content-center justify-center mx-auto">
+      <div className="flex-1 xl:my-auto my-3">Reliability</div>
+      <div className="w-1 bg-white" />
+      <div className="flex-1 text-2xl mx-16 xl:my-auto my-3">We use the reliability of the cloud, alongside flexible code for different methods of deployment to increase our relyability</div>
+      <div className="w-1 bg-white" />
+      <AiFillApi className="w-36 h-36 flex-1 m-auto xl:my-auto my-3" />
     </div>
   </div>
 );
