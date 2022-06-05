@@ -10,7 +10,7 @@ const TitleBar = ({ text, className = '' }:TitlebarProps) => (
     <div className="flex-auto justify-center flex-col m-auto">
       <div className="h-[0.2vh] bg-black m-4" />
     </div>
-    <div className="flex-nowrap">
+    <div className="flex-nowrap font-light">
       {text}
     </div>
     <div className="flex-auto justify-center flex-col m-auto">
