@@ -1,17 +1,33 @@
 import {
   FaCalendarCheck,
+  FaMoneyCheckAlt,
 } from 'react-icons/fa';
 import {
   BsFillCalendarWeekFill,
+  BsFillCalendarEventFill,
+  BsBookmarkCheckFill,
 } from 'react-icons/bs';
 
 import {
   MdOutlineImportExport,
+  MdAssignmentInd,
+  MdTimeline,
+  MdSportsKabaddi,
+  MdAssignment,
 } from 'react-icons/md';
 
 import {
-  AiOutlineCloudSync,
-} from 'react-icons/ai';
+  IoCloudDone,
+  IoPersonAdd,
+} from 'react-icons/io5';
+
+import {
+  GiArchiveRegister,
+} from 'react-icons/gi';
+
+import {
+  RiParentFill,
+} from 'react-icons/ri';
 
 import React from 'react';
 import Carosel from '@/ui/Carosel/Carosel';
@@ -36,7 +52,17 @@ const App = () => (
         <IconBox title="Attendance Tracking" icon={<FaCalendarCheck className="w-full h-24 fill-slate-800" />} />
         <IconBox title="Timetable Management" icon={<BsFillCalendarWeekFill className="w-full h-24 fill-slate-800" />} />
         <IconBox title="Easy Data Imports and Exports" icon={<MdOutlineImportExport className="w-full h-24 fill-slate-800" />} />
-        <IconBox title="Cloud Hosting" icon={<AiOutlineCloudSync className="w-full h-24 fill-slate-800" />} />
+        <IconBox title="Cloud Hosting" icon={<IoCloudDone className="w-full h-24 fill-slate-800" />} />
+        <IconBox title="Course assignment" icon={<MdAssignmentInd className="w-full h-24 fill-slate-800" />} />
+        <IconBox title="Institution Registration" icon={<IoPersonAdd className="w-full h-24 fill-slate-800" />} />
+        <IconBox title="Exam Management" icon={<GiArchiveRegister className="w-full h-24 fill-slate-800" />} />
+        <IconBox title="Behavior Management" icon={<MdSportsKabaddi className="w-full h-24 fill-slate-800" />} />
+        <IconBox title="Guardian portal" icon={<RiParentFill className="w-full h-24 fill-slate-800" />} />
+        <IconBox title="Event Organiser" icon={<BsFillCalendarEventFill className="w-full h-24 fill-slate-800" />} />
+        <IconBox title="Resource Booker" icon={<BsBookmarkCheckFill className="w-full h-24 fill-slate-800" />} />
+        <IconBox title="Assignment Manager" icon={<MdAssignment className="w-full h-24 fill-slate-800" />} />
+        <IconBox title="End of Term Course Reviews" icon={<MdTimeline className="w-full h-24 fill-slate-800" />} />
+        <IconBox title="Expense Manager" icon={<FaMoneyCheckAlt className="w-full h-24 fill-slate-800" />} />
       </div>
     </div>
 
