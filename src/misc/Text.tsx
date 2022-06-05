@@ -8,7 +8,7 @@ const messages = {
     caroselSlides: {
       speed: {
         title: 'Speed',
-        text: 'Gas gas gas, gotta step on the gas',
+        text: 'Our system uses advanced load balancing with state of the art equipment, alongside being designed from the ground up for speed',
       },
       security: {
         title: 'Security',
@@ -25,9 +25,10 @@ const messages = {
 };
 
 // TODO: setup the different languages
-let selected;
+const selected = messages.en;
 // eslint-disable-next-line no-useless-concat
-const language = 'e' + 'n';
+/*
+let selected;
 switch (language) {
   case 'en':
     selected = messages.en;
@@ -36,7 +37,7 @@ switch (language) {
     selected = messages.en;
     break;
 }
-
+*/
 const Text = selected;
 
 export default Text;
