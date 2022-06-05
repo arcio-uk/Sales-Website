@@ -38,7 +38,7 @@ const Carosel = ({ children }: CaroselProps) => {
   return (
     <div>
       <div className="navigation-wrapper shadow-2xl">
-        <div ref={sliderRef} className="keen-slider">
+        <div ref={sliderRef} className="keen-slider w-screen">
           {children}
         </div>
         {loaded && instanceRef.current && (
