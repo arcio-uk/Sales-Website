@@ -15,6 +15,7 @@ import {
 
 import React from 'react';
 import Carosel from '@/ui/Carosel/Carosel';
+import { Speed, Security, Reliability } from '@/ui/Carosel/Slides';
 import TitleBar from '@/ui/TitleBar';
 import IconBox from '@/ui/IconBox/IconBox';
 
@@ -26,12 +27,9 @@ const App = () => (
     </div>
 
     <Carosel>
-      <div className="keen-slider__slide number-slide1">1</div>
-      <div className="keen-slider__slide number-slide2">2</div>
-      <div className="keen-slider__slide number-slide3">3</div>
-      <div className="keen-slider__slide number-slide4">4</div>
-      <div className="keen-slider__slide number-slide5">5</div>
-      <div className="keen-slider__slide number-slide6">6</div>
+      <Speed />
+      <Security />
+      <Reliability />
     </Carosel>
     <div className="flex w-full justify-center">
       <div className="xl:grid-cols-4 grid md:grid-cols-2 grid-cols-1 gap-5 md:w-3/5 4/5">
