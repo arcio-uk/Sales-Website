@@ -48,7 +48,7 @@ const App = () => (
       <Reliability />
     </Carosel>
     <div className="flex w-full justify-center">
-      <div className="xl:grid-cols-4 grid md:grid-cols-2 grid-cols-1 gap-5 md:w-3/5 4/5">
+      <div className="xl:grid-cols-4 grid grid-cols-2 md:gap-5 md:w-3/5">
         <IconBox title="Attendance Tracking" icon={<FaCalendarCheck className="w-full h-24 fill-slate-800" />} />
         <IconBox title="Timetable Management" icon={<BsFillCalendarWeekFill className="w-full h-24 fill-slate-800" />} />
         <IconBox title="Easy Data Imports and Exports" icon={<MdOutlineImportExport className="w-full h-24 fill-slate-800" />} />
