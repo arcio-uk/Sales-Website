@@ -2,13 +2,15 @@ import {
   MdSpeed,
 } from 'react-icons/md';
 
+import Text from '@/misc/Text';
+import Slide from './Slide';
+
+const staticText = Text.caroselSlides.speed;
+
 const Speed = () => (
-  <div className="keen-slider__slide text-center bg-gradient-to-r from-indigo-500 to-pink-500 flex w-screen">
-    <div className="m-auto text-white text-5xl flex space-x-5 w-4/5 content-center justify-center">
-      <div className="flex-2">Speedy boi</div>
-      <div className="flex-1"><MdSpeed /></div>
-    </div>
-  </div>
+  <Slide title={staticText.title} text={staticText.text} className="bg-gradient-to-r from-pink-500 to-orange-500">
+    <MdSpeed className="w-36 h-36 flex-1 m-auto xl:my-auto my-3" />
+  </Slide>
 );
 
 export default Speed;
