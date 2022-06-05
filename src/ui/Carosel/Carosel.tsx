@@ -24,7 +24,7 @@ const Carosel = ({ children }: CaroselProps) => {
       setLoaded(true);
     },
   });
-
+  /*
   // set a delay for changing the carosel slide
   useEffect(() => {
     if (nextSlideTimeout) window.clearTimeout(nextSlideTimeout);
@@ -34,7 +34,7 @@ const Carosel = ({ children }: CaroselProps) => {
       });
     }, 10000));
   }, [lastChanged]);
-
+  */
   return (
     <div>
       <div className="navigation-wrapper shadow-2xl">
