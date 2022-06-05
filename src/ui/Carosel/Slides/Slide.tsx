@@ -17,6 +17,7 @@ const Slide = ({
       <div className="w-1 bg-white rounded-xl rotate-12" />
       <div className="flex-1 text-2xl mx-16 xl:my-auto my-3">{text}</div>
       <div className="w-1 bg-white rounded-xl rotate-12" />
+      { /* Here is where the icon should go, it should be an outline! */ }
       {children}
     </div>
   </div>
