@@ -9,7 +9,7 @@ type IconBoxProps = {
   icon: ReactNode;
 }
 const IconBox = ({ title, icon, children }: IconBoxProps) => (
-  <div className="text-center bg-white m-5 rounded-2xl shadow-2xl flex-col flex">
+  <div className="text-center bg-white m-5 rounded-2xl shadow-2xl flex-col flex min-w-fit">
     <div className="m-2 overlay flex-2">
       {icon}
     </div>
