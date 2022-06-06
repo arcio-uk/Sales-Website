@@ -1,4 +1,3 @@
-import React from 'react';
 import clsx from 'clsx';
 
 type TextfieldProps = {
@@ -6,12 +5,12 @@ type TextfieldProps = {
 	type: string;
 	label: string;
 	className?: string;
-  onChange: Function;
+  onChange?: Function;
 	props?: Array<any>;
 };
 
 const Textfield = ({
-  name, type, label, className, ...props
+  name, type, label, className, onChange, ...props
 }: TextfieldProps) => (
   <div className="flex flex-col w-full">
     <label htmlFor={name} className="block mb-1 text-sm font-medium text-gray-900">
@@ -24,6 +23,7 @@ const Textfield = ({
         'bg-gray-50 border transition-all border-gray-300 text-gray-900 text-sm rounded-lg outline-none hover:border-purple-500 focus:border-purple-500 block w-full p-2.5',
         className,
       )}
+      onChange={() => onChange && onChange()}
       {...props}
     />
   </div>

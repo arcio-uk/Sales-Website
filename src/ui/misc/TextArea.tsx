@@ -10,7 +10,7 @@ type TextareaProps = {
 };
 
 const Textarea = ({
-  name, label, className, ...props
+  name, label, className, onChange, ...props
 }: TextareaProps) => (
   <div className="flex flex-col w-full">
     <label htmlFor={name} className="block mb-1 text-sm font-medium text-gray-900">
@@ -22,6 +22,7 @@ const Textarea = ({
         'bg-gray-50 border transition-all border-gray-300 text-gray-900 text-sm rounded-lg outline-none hover:border-purple-500 focus:border-purple-500 block w-full p-2.5 h-52 resize-none',
         className,
       )}
+      onChange={() => onChange && onChange()}
       {...props}
     />
   </div>
