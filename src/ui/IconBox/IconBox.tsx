@@ -1,6 +1,6 @@
 /* eslint-disable react/require-default-props */
 import React, {
-  JSXElementConstructor, ReactElement, ReactNode, useState,
+  JSXElementConstructor, ReactElement, ReactNode, useEffect, useState,
 } from 'react';
 
 type IconBoxProps = {
@@ -12,11 +12,22 @@ type IconBoxProps = {
 }
 const IconBox = ({ data, icon }: IconBoxProps) => {
   const [open, setOpen] = useState(false);
+  const [closing, setClosing] = useState(false);
+
+  useEffect(() => {
+    if (closing) {
+      setTimeout(() => {
+        setOpen(false);
+        setClosing(false);
+      }, 500);
+    }
+  }, [closing]);
+
   return (
-    <div className="flex-col flex  m-2">
+    <div className={`flex-col flex m-2 ${open && 'col-span-2'} animate__animated animate__fadeIn`}>
       <div
         className={`text-center bg-white ${open ? 'rounded-t-2xl' : 'rounded-2xl'} flex-col flex min-w-fit cursor-pointer animate__animated animate__fadeIn z-10`}
-        onClick={() => setOpen(!open)}
+        onClick={() => (open ? setClosing(true) : setOpen(true))}
       >
         <div className="md:m-2 m-1 overlay flex-2">
           {icon}
@@ -30,7 +41,7 @@ const IconBox = ({ data, icon }: IconBoxProps) => {
       </div>
       {
         open && (
-          <div className="animate__animated animate__backInUp animate__faster flex-col col-span-full bg-white p-2 rounded-b-2xl">
+          <div className={`animate__animated ${closing ? 'animate__backOutDown' : 'animate__backInUp'} animate__faster flex-col col-span-full bg-white p-2 rounded-b-2xl`}>
             {data.description}
           </div>
         )
