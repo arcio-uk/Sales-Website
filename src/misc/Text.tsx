@@ -31,35 +31,35 @@ const messages = {
       },
       timetable: {
         title: 'Timetable Management',
-        description: '',
+        description: 'Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! ',
       },
       importExport: {
         title: 'Easy Data Imports and Exports',
-        description: '',
+        description: 'Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! ',
       },
       cloud: {
         title: 'Cloud Hosting',
-        description: '',
+        description: 'Cloud Hosting! Cloud Hosting! Cloud Hosting! Cloud Hosting! Cloud Hosting! Cloud Hosting! Cloud Hosting! Cloud Hosting! Cloud Hosting! Cloud Hosting! Cloud Hosting! ',
       },
       courseAssignment: {
         title: 'Course assignment',
-        description: '',
+        description: 'Course assignment! Course assignment! Course assignment! Course assignment! Course assignment! Course assignment! Course assignment! Course assignment! Course assignment! Course assignment! ',
       },
       signup: {
         title: 'Institution Registration',
-        description: '',
+        description: 'Institution Registration! Institution Registration! Institution Registration! Institution Registration! Institution Registration! Institution Registration! Institution Registration! Institution Registration! Institution Registration! Institution Registration! Institution Registration! Institution Registration! ',
       },
       examManagement: {
         title: 'Exam Management',
-        description: '',
+        description: 'Exam Management! Exam Management! Exam Management! Exam Management! Exam Management! Exam Management! Exam Management! Exam Management! Exam Management! Exam Management! Exam Management! Exam Management! ',
       },
       behaviorManagement: {
         title: 'Behavior Management',
-        description: '',
+        description: 'Behavior Management! Behavior Management! Behavior Management! Behavior Management! Behavior Management! Behavior Management! Behavior Management! Behavior Management! Behavior Management! Behavior Management! ',
       },
       guardianPortal: {
         title: 'Guardian portal',
-        description: '',
+        description: 'Guardian portal! Guardian portal! Guardian portal! Guardian portal! Guardian portal! Guardian portal! Guardian portal! Guardian portal! Guardian portal! Guardian portal! Guardian portal! Guardian portal! Guardian portal! Guardian portal! ',
       },
       eventOrganiser: {
         title: 'Event Organiser',
