@@ -26,7 +26,7 @@ const IconBox = ({ data, icon }: IconBoxProps) => {
   return (
     <div className={`flex-col flex ${open && 'col-span-2'} animate__animated animate__fadeIn`}>
       <div
-        className={`text-center bg-white ${open ? 'rounded-t-2xl' : 'rounded-2xl'} flex-col flex min-w-fit cursor-pointer animate__animated animate__fadeIn z-10`}
+        className={`text-center bg-white ${open ? 'rounded-t-2xl' : 'rounded-2xl'} flex-1 flex-col flex min-w-fit cursor-pointer animate__animated animate__fadeIn z-10`}
         onClick={() => (open ? setClosing(true) : setOpen(true))}
       >
         <div className="md:m-2 m-1 overlay flex-2">
