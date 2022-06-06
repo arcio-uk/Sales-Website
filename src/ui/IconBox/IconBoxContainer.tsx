@@ -44,8 +44,8 @@ const info = Text.explanationBoxes;
 const iconStyling = 'w-full h-24 fill-slate-800';
 
 const IconBoxContainer = () => (
-  <div className="flex w-full justify-center">
-    <div className="xl:grid-cols-4 grid grid-cols-2 md:gap-5 md:w-3/5">
+  <div className="flex w-full justify-center mt-5 mb-5">
+    <div className="xl:grid-cols-4 grid grid-cols-2 gap-2 md:gap-5 md:w-3/5">
       <IconBox data={info.attendance} icon={<FaCalendarCheck className={iconStyling} />} />
       <IconBox data={info.timetable} icon={<BsFillCalendarWeekFill className={iconStyling} />} />
       <IconBox data={info.importExport} icon={<MdOutlineImportExport className={iconStyling} />} />
