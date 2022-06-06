@@ -1,4 +1,7 @@
-/* eslint-disable global-require */
+/* eslint-disable import/no-extraneous-dependencies, global-require */
+
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   content: [
     './index.html',
@@ -8,7 +11,21 @@ module.exports = {
     baseUrl: 'src/',
   },
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        hoverAnimation: 'hoverKeyframes .05s ease-in',
+      },
+      keyframes: {
+        hoverKeyframes: {
+          '0%': {
+            backgroundColor: colors.white,
+          },
+          '100%': {
+            backgroundColor: colors.neutral[200],
+          },
+        },
+      },
+    },
   },
   plugins: [
     require('tailwindcss-animatecss')({
