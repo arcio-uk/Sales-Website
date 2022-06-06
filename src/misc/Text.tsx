@@ -16,11 +16,76 @@ const messages = {
       },
       relyability: {
         title: 'Reliability',
-        text: 'We use the reliability of the cloud, alongside flexible code for different methods of deployment to increase our relyability and have a near perfect uptime!',
+        text: 'We use the reliability of the cloud, alongside flexible code for different methods of deployment to increase our reliability and have a near perfect uptime!',
 
       },
+      flexibility: {
+        title: 'Flexibility',
+        text: 'We designed our MIS to be as flexible as possible, allowing for all the potential edge-cases we could think of! We use Role Based Access Control (RBAC) to optimise the ease of use and efficiency of managing the permissions',
+      },
     },
-    explanationBoxes: [],
+    explanationBoxes: {
+      attendance: {
+        title: 'Attendance Tracking',
+        description: 'We like attendance! We like attendance! We like attendance! We like attendance! We like attendance! We like attendance! We like attendance! We like attendance! We like attendance! We like attendance! We like attendance! ',
+      },
+      timetable: {
+        title: 'Timetable Management',
+        description: 'Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! Timetable Management! ',
+      },
+      importExport: {
+        title: 'Easy Data Imports and Exports',
+        description: 'Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! Easy Data Imports and Exports! ',
+      },
+      cloud: {
+        title: 'Cloud Hosting',
+        description: 'Cloud Hosting! Cloud Hosting! Cloud Hosting! Cloud Hosting! Cloud Hosting! Cloud Hosting! Cloud Hosting! Cloud Hosting! Cloud Hosting! Cloud Hosting! Cloud Hosting! ',
+      },
+      courseAssignment: {
+        title: 'Course assignment',
+        description: 'Course assignment! Course assignment! Course assignment! Course assignment! Course assignment! Course assignment! Course assignment! Course assignment! Course assignment! Course assignment! ',
+      },
+      signup: {
+        title: 'Institution Registration',
+        description: 'Institution Registration! Institution Registration! Institution Registration! Institution Registration! Institution Registration! Institution Registration! Institution Registration! Institution Registration! Institution Registration! Institution Registration! Institution Registration! Institution Registration! ',
+      },
+      examManagement: {
+        title: 'Exam Management',
+        description: 'Exam Management! Exam Management! Exam Management! Exam Management! Exam Management! Exam Management! Exam Management! Exam Management! Exam Management! Exam Management! Exam Management! Exam Management! ',
+      },
+      behaviorManagement: {
+        title: 'Behavior Management',
+        description: 'Behavior Management! Behavior Management! Behavior Management! Behavior Management! Behavior Management! Behavior Management! Behavior Management! Behavior Management! Behavior Management! Behavior Management! ',
+      },
+      guardianPortal: {
+        title: 'Guardian portal',
+        description: 'Guardian portal! Guardian portal! Guardian portal! Guardian portal! Guardian portal! Guardian portal! Guardian portal! Guardian portal! Guardian portal! Guardian portal! Guardian portal! Guardian portal! Guardian portal! Guardian portal! ',
+      },
+      eventOrganiser: {
+        title: 'Event Organiser',
+        description: '',
+      },
+      resourceBooker: {
+        title: 'Resource Booker',
+        description: '',
+      },
+      assignmentManager: {
+        title: 'Assignment Manager',
+        description: '',
+      },
+      courseReviews: {
+        title: 'End of Term Course Reviews',
+        description: '',
+      },
+      expenseManager: {
+        title: 'Expense Manager',
+        description: '',
+      },
+      accessControl: {
+        title: 'Role Based Access Control',
+        description: '',
+      },
+    },
   },
 };
 
