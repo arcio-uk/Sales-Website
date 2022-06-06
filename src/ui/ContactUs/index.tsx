@@ -1,13 +1,39 @@
+import { SetStateAction, useState } from 'react';
+import TextArea from '../misc/TextArea';
+import Textfield from '../misc/TextField';
 import TitleBar from '../TitleBar';
 
-const ContactUs = () => (
-  <div className="flex w-full justify-center">
-    <div className="flex-col md:w-3/5 bg-white m-5 rounded-2xl text-center">
-      <TitleBar text="Contact Us" />
-      el
+// TODO: make this submit to a server
+// TODO: make the message box a textArea
+const ContactUs = () => {
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  return (
+    <div className="flex w-full justify-center">
+      <div className="flex-col md:w-3/5 w-full bg-white m-5 rounded-2xl p-5">
+        <TitleBar text="Contact Us" />
+        <Textfield
+          name="email"
+          type="email"
+          label="Email"
+          onchange={(e: { target: { value: SetStateAction<string>; }; }) => setEmail(e.target.value)}
+        />
+        <TextArea
+          name="message"
+          label="Message"
+          onchange={(e: { target: { value: SetStateAction<string>; }; }) => setMessage(e.target.value)}
+        />
+        <div className="flex w-full justify-center m-5">
+          <button
+            type="submit"
+            className="w-3/4 rounded bg-purple-500 text-center py-2 mx-auto text-zinc-100 font-light text-2xl"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
     </div>
-
-  </div>
-);
+  );
+};
 
 export default ContactUs;
