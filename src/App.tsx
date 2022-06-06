@@ -1,5 +1,6 @@
 import React from 'react';
 import Carosel from '@/ui/Carosel/Carosel';
+import ContactUs from '@/ui/ContactUs';
 import {
   Speed, Security, Reliability, Flexibility,
 } from '@/ui/Carosel/Slides';
@@ -20,7 +21,7 @@ const App = () => (
       <Flexibility />
     </Carosel>
     <IconBoxContainer />
-
+    <ContactUs />
   </div>
 );
 

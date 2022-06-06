@@ -5,7 +5,8 @@ type TextfieldProps = {
 	name: string;
 	type: string;
 	label: string;
-	className: string;
+	className?: string;
+	onchange?: Function;
 	props?: Array<any>;
 };
 
