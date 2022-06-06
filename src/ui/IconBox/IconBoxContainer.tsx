@@ -31,6 +31,10 @@ import {
   RiParentFill,
 } from 'react-icons/ri';
 
+import {
+  VscTypeHierarchySub,
+} from 'react-icons/vsc';
+
 import Text from '@/misc/Text';
 
 import IconBox from './IconBox';
@@ -56,6 +60,7 @@ const IconBoxContainer = () => (
       <IconBox data={info.assignmentManager} icon={<MdAssignment className={iconStyling} />} />
       <IconBox data={info.courseReviews} icon={<MdTimeline className={iconStyling} />} />
       <IconBox data={info.expenseManager} icon={<FaMoneyCheckAlt className={iconStyling} />} />
+      <IconBox data={info.accessControl} icon={<VscTypeHierarchySub className={iconStyling} />} />
     </div>
   </div>
 );

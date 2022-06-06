@@ -81,6 +81,10 @@ const messages = {
         title: 'Expense Manager',
         description: '',
       },
+      accessControl: {
+        title: 'Role Based Access Control',
+        description: '',
+      },
     },
   },
 };
