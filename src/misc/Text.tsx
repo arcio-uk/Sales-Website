@@ -27,7 +27,7 @@ const messages = {
     explanationBoxes: {
       attendance: {
         title: 'Attendance Tracking',
-        description: '',
+        description: 'We like attendance! We like attendance! We like attendance! We like attendance! We like attendance! We like attendance! We like attendance! We like attendance! We like attendance! We like attendance! We like attendance! ',
       },
       timetable: {
         title: 'Timetable Management',

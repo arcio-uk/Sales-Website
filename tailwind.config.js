@@ -12,10 +12,11 @@ module.exports = {
   },
   plugins: [
     require('tailwindcss-animatecss')({
-      classes: ['animate__animated', 'animate__fadeIn', 'animate__bounceIn', 'animate__lightSpeedOut'],
+      classes: ['animate__animated', 'animate__fadeIn', 'animate__bounceIn', 'animate__lightSpeedOut', 'animate__rollIn', 'animate__backInUp', 'animate__fast', 'animate__faster'],
       settings: {
-        animatedSpeed: 1000,
+        animatedSpeed: 500,
         heartBeatSpeed: 1000,
+        fadeIn: 300,
         hingeSpeed: 2000,
         bounceInSpeed: 750,
         bounceOutSpeed: 750,
