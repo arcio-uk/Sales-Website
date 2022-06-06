@@ -16,7 +16,7 @@ const messages = {
       },
       relyability: {
         title: 'Reliability',
-        text: 'We use the reliability of the cloud, alongside flexible code for different methods of deployment to increase our relyability and have a near perfect uptime!',
+        text: 'We use the reliability of the cloud, alongside flexible code for different methods of deployment to increase our reliability and have a near perfect uptime!',
 
       },
       flexibility: {
