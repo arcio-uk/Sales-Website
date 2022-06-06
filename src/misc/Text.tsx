@@ -86,6 +86,12 @@ const messages = {
         description: '',
       },
     },
+    contactUs: {
+      title: 'Contact Us',
+      email: 'Email',
+      message: 'Message',
+      submit: 'Submit',
+    },
   },
 };
 

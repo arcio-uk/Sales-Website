@@ -3,6 +3,10 @@ import Textarea from '@/ui/misc/Textarea';
 import Textfield from '@/ui/misc/Textfield';
 import TitleBar from '@/ui/TitleBar';
 
+import Text from '@/misc/Text';
+
+const staticText = Text.contactUs;
+
 // TODO: make this submit to a server
 // TODO: make the message box a textArea
 const ContactUs = () => {
@@ -11,16 +15,16 @@ const ContactUs = () => {
   return (
     <div className="flex w-full justify-center">
       <div className="flex-col md:w-3/5 w-full bg-white m-5 rounded-2xl p-5">
-        <TitleBar text="Contact Us" />
+        <TitleBar text={staticText.title} />
         <Textfield
           name="email"
           type="email"
-          label="Email"
+          label={staticText.email}
           onChange={(e: { target: { value: SetStateAction<string>; }; }) => setEmail(e.target.value)}
         />
         <Textarea
           name="message"
-          label="Message"
+          label={staticText.message}
           onChange={(e: { target: { value: SetStateAction<string>; }; }) => setMessage(e.target.value)}
         />
         <div className="flex w-full justify-center m-5">
@@ -37,7 +41,7 @@ const ContactUs = () => {
                       hover:animate-submitButtonHoverAnimation
                       hover:bg-purple-600"
           >
-            Submit
+            {staticText.submit}
           </button>
         </div>
       </div>
