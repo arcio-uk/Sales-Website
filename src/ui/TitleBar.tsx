@@ -2,7 +2,7 @@ import React from 'react';
 
 interface TitlebarProps {
   text: string;
-  className: string;
+  className?: string;
 }
 
 const TitleBar = ({ text, className = '' }:TitlebarProps) => (

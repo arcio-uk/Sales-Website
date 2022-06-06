@@ -43,26 +43,30 @@ const info = Text.explanationBoxes;
 
 const iconStyling = 'w-full h-24 fill-slate-800';
 
-const IconBoxContainer = () => (
-  <div className="flex w-full justify-center">
-    <div className="xl:grid-cols-4 grid grid-cols-2 md:gap-5 md:w-3/5">
-      <IconBox data={info.attendance} icon={<FaCalendarCheck className={iconStyling} />} />
-      <IconBox data={info.timetable} icon={<BsFillCalendarWeekFill className={iconStyling} />} />
-      <IconBox data={info.importExport} icon={<MdOutlineImportExport className={iconStyling} />} />
-      <IconBox data={info.cloud} icon={<IoCloudDone className={iconStyling} />} />
-      <IconBox data={info.courseAssignment} icon={<MdAssignmentInd className={iconStyling} />} />
-      <IconBox data={info.signup} icon={<IoPersonAdd className={iconStyling} />} />
-      <IconBox data={info.examManagement} icon={<GiArchiveRegister className={iconStyling} />} />
-      <IconBox data={info.behaviorManagement} icon={<MdSportsKabaddi className={iconStyling} />} />
-      <IconBox data={info.guardianPortal} icon={<RiParentFill className={iconStyling} />} />
-      <IconBox data={info.eventOrganiser} icon={<BsFillCalendarEventFill className={iconStyling} />} />
-      <IconBox data={info.resourceBooker} icon={<BsBookmarkCheckFill className={iconStyling} />} />
-      <IconBox data={info.assignmentManager} icon={<MdAssignment className={iconStyling} />} />
-      <IconBox data={info.courseReviews} icon={<MdTimeline className={iconStyling} />} />
-      <IconBox data={info.expenseManager} icon={<FaMoneyCheckAlt className={iconStyling} />} />
-      <IconBox data={info.accessControl} icon={<VscTypeHierarchySub className={iconStyling} />} />
-    </div>
-  </div>
-);
+const IconBoxContainer = () => {
+  // this is needed as the boxes being open by default looks bad on 2 cols
+  const showInfo = window.innerWidth > 1280;
 
+  return (
+    <div className="flex w-full justify-center mt-5 mb-5">
+      <div className="xl:grid-cols-4 grid grid-cols-2 gap-2 md:gap-5 md:w-3/5">
+        <IconBox data={info.timetable} icon={<BsFillCalendarWeekFill className={iconStyling} />} />
+        <IconBox data={info.attendance} icon={<FaCalendarCheck className={iconStyling} />} showInfo={showInfo} />
+        <IconBox data={info.importExport} icon={<MdOutlineImportExport className={iconStyling} />} />
+        <IconBox data={info.cloud} icon={<IoCloudDone className={iconStyling} />} />
+        <IconBox data={info.courseAssignment} icon={<MdAssignmentInd className={iconStyling} />} />
+        <IconBox data={info.signup} icon={<IoPersonAdd className={iconStyling} />} />
+        <IconBox data={info.examManagement} icon={<GiArchiveRegister className={iconStyling} />} />
+        <IconBox data={info.behaviorManagement} icon={<MdSportsKabaddi className={iconStyling} />} />
+        <IconBox data={info.guardianPortal} icon={<RiParentFill className={iconStyling} />} showInfo={showInfo} />
+        <IconBox data={info.eventOrganiser} icon={<BsFillCalendarEventFill className={iconStyling} />} />
+        <IconBox data={info.resourceBooker} icon={<BsBookmarkCheckFill className={iconStyling} />} />
+        <IconBox data={info.assignmentManager} icon={<MdAssignment className={iconStyling} />} />
+        <IconBox data={info.courseReviews} icon={<MdTimeline className={iconStyling} />} />
+        <IconBox data={info.expenseManager} icon={<FaMoneyCheckAlt className={iconStyling} />} />
+        <IconBox data={info.accessControl} icon={<VscTypeHierarchySub className={iconStyling} />} />
+      </div>
+    </div>
+  );
+};
 export default IconBoxContainer;

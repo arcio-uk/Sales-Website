@@ -1,6 +1,6 @@
 /* eslint-disable react/require-default-props */
-import React, {
-  JSXElementConstructor, ReactElement, ReactNode, useEffect, useState,
+import {
+  ReactNode, useEffect, useState,
 } from 'react';
 
 type IconBoxProps = {
@@ -8,10 +8,11 @@ type IconBoxProps = {
     title: string;
     description: string;
   };
+  showInfo?: boolean;
   icon: ReactNode;
 }
-const IconBox = ({ data, icon }: IconBoxProps) => {
-  const [open, setOpen] = useState(false);
+const IconBox = ({ data, icon, showInfo }: IconBoxProps) => {
+  const [open, setOpen] = useState(showInfo);
   const [closing, setClosing] = useState(false);
 
   useEffect(() => {
@@ -24,9 +25,24 @@ const IconBox = ({ data, icon }: IconBoxProps) => {
   }, [closing]);
 
   return (
-    <div className={`flex-col flex m-2 ${open && 'col-span-2'} animate__animated animate__fadeIn`}>
+    <div className={`flex-col flex ${open && 'col-span-2'} animate__animated animate__fadeIn `}>
       <div
-        className={`text-center bg-white ${open ? 'rounded-t-2xl' : 'rounded-2xl'} flex-col flex min-w-fit cursor-pointer animate__animated animate__fadeIn z-10`}
+        className={`
+          text-center 
+        bg-white 
+          ${open ? 'rounded-t-2xl' : 'rounded-2xl'} 
+          flex-1 
+          flex-col 
+          flex
+          min-w-fit 
+          cursor-pointer 
+          z-10 
+          hover:animate-iconBoxHoverAnimation 
+        hover:bg-neutral-200 
+          border-2
+          border-white
+          hover:border-slate-500 
+        `}
         onClick={() => (open ? setClosing(true) : setOpen(true))}
       >
         <div className="md:m-2 m-1 overlay flex-2">
