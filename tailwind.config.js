@@ -13,15 +13,26 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        hoverAnimation: 'hoverKeyframes .05s ease-in',
+        iconBoxHoverAnimation: 'iconBoxHoverKeyFrames .1s ease-out',
+        submitButtonHoverAnimation: 'SubmitButtonHoverKeyFrames .1s ease-out',
       },
       keyframes: {
-        hoverKeyframes: {
+        iconBoxHoverKeyFrames: {
           '0%': {
             backgroundColor: colors.white,
+            borderColor: colors.white,
           },
           '100%': {
             backgroundColor: colors.neutral[200],
+            borderColor: colors.slate[500],
+          },
+        },
+        submitButtonHoverKeyFrames: {
+          '0%': {
+            backgroundColor: colors.purple[500],
+          },
+          '100%': {
+            backgroundColor: colors.purple[600],
           },
         },
       },

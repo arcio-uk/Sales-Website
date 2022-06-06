@@ -27,7 +27,22 @@ const IconBox = ({ data, icon, showInfo }: IconBoxProps) => {
   return (
     <div className={`flex-col flex ${open && 'col-span-2'} animate__animated animate__fadeIn `}>
       <div
-        className={`text-center bg-white ${open ? 'rounded-t-2xl' : 'rounded-2xl'} flex-1 flex-col flex min-w-fit cursor-pointer z-10 hover:animate-hoverAnimation hover:bg-neutral-200`}
+        className={`
+          text-center 
+        bg-white 
+          ${open ? 'rounded-t-2xl' : 'rounded-2xl'} 
+          flex-1 
+          flex-col 
+          flex
+          min-w-fit 
+          cursor-pointer 
+          z-10 
+          hover:animate-iconBoxHoverAnimation 
+        hover:bg-neutral-200 
+          border-2
+          border-white
+          hover:border-slate-500 
+        `}
         onClick={() => (open ? setClosing(true) : setOpen(true))}
       >
         <div className="md:m-2 m-1 overlay flex-2">
