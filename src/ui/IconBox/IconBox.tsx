@@ -1,6 +1,6 @@
 /* eslint-disable react/require-default-props */
-import React, {
-  JSXElementConstructor, ReactElement, ReactNode, useEffect, useState,
+import {
+  ReactNode, useEffect, useState,
 } from 'react';
 
 type IconBoxProps = {
