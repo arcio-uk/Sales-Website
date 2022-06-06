@@ -4,7 +4,7 @@
  */
 const messages = {
   en: {
-    welcome: 'Arcio Systems',
+    welcome: 'Arcio EDU Systems',
     caroselSlides: {
       speed: {
         title: 'Speed',
