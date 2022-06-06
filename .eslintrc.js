@@ -33,6 +33,7 @@ module.exports = {
     'jsx-a11y/no-static-element-interactions': 0,
     'react/forbid-prop-types': 0, // TODO: remove and fix these before prod!
     'react/react-in-jsx-scope': 0,
+    'react/require-default-props': 0,
     'no-unused-vars': 0,
     'react/jsx-filename-extension': 0,
     'react/button-has-type': 0,
