@@ -1,3 +1,4 @@
+import { AiFillHeart } from 'react-icons/ai';
 import { Outlet } from 'react-router';
 
 const StandardLayout = () => (
@@ -13,6 +14,13 @@ const StandardLayout = () => (
     </div>
     <div className="h-16" />
     <Outlet />
+    <div className="text-center p-3 bg-gradient-to-r from-orange-400 to-red-400 text-white font-semibold">
+      Copyright © 2022 Arcio LLC - Made with
+      {' '}
+      <AiFillHeart className="fill-red-600 inline align-middle" />
+      {' '}
+      By the Arcio Team
+    </div>
   </div>
 );
 
