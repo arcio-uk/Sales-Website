@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 
-type TextAreaProps = {
+type TextareaProps = {
 	name: string;
 	label: string;
 	className?: string;
@@ -9,9 +9,9 @@ type TextAreaProps = {
 	props?: Array<any>;
 };
 
-const TextArea = ({
+const Textarea = ({
   name, label, className, ...props
-}: TextAreaProps) => (
+}: TextareaProps) => (
   <div className="flex flex-col w-full">
     <label htmlFor={name} className="block mb-1 text-sm font-medium text-gray-900">
       {label}
@@ -19,7 +19,7 @@ const TextArea = ({
     <textarea
       id={name}
       className={clsx(
-        'bg-gray-50 border transition-all border-gray-300 text-gray-900 text-sm rounded-lg outline-none hover:border-purple-500 focus:border-purple-500 block w-full p-2.5 h-32 min-h-[8rem]',
+        'bg-gray-50 border transition-all border-gray-300 text-gray-900 text-sm rounded-lg outline-none hover:border-purple-500 focus:border-purple-500 block w-full p-2.5 h-52 resize-none',
         className,
       )}
       {...props}
@@ -27,4 +27,4 @@ const TextArea = ({
   </div>
 );
 
-export default TextArea;
+export default Textarea;

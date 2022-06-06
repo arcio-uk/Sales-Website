@@ -1,7 +1,7 @@
 import { SetStateAction, useState } from 'react';
-import TextArea from '../misc/TextArea';
-import Textfield from '../misc/TextField';
-import TitleBar from '../TitleBar';
+import Textarea from '@/ui/misc/Textarea';
+import Textfield from '@/ui/misc/Textfield';
+import TitleBar from '@/ui/TitleBar';
 
 // TODO: make this submit to a server
 // TODO: make the message box a textArea
@@ -18,7 +18,7 @@ const ContactUs = () => {
           label="Email"
           onchange={(e: { target: { value: SetStateAction<string>; }; }) => setEmail(e.target.value)}
         />
-        <TextArea
+        <Textarea
           name="message"
           label="Message"
           onchange={(e: { target: { value: SetStateAction<string>; }; }) => setMessage(e.target.value)}
