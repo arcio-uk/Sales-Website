@@ -19,6 +19,10 @@ const messages = {
         text: 'We use the reliability of the cloud, alongside flexible code for different methods of deployment to increase our relyability and have a near perfect uptime!',
 
       },
+      flexibility: {
+        title: 'Flexibility',
+        text: 'We designed our MIS to be as flexible as possible, allowing for all the potential edge-cases we could think of! We use Role Based Access Control (RBAC) to optimise the ease of use and efficiency of managing the permissions',
+      },
     },
     explanationBoxes: [],
   },
