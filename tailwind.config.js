@@ -14,7 +14,7 @@ module.exports = {
     extend: {
       animation: {
         iconBoxHoverAnimation: 'iconBoxHoverKeyFrames .1s ease-out',
-        submitButtonHoverAnimation: 'SubmitButtonHoverKeyFrames .1s ease-out',
+        submitButtonHoverAnimation: 'submitButtonHoverKeyFrames .1s ease-out',
       },
       keyframes: {
         iconBoxHoverKeyFrames: {

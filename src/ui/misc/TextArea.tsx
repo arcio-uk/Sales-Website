@@ -5,7 +5,7 @@ type TextareaProps = {
 	name: string;
 	label: string;
 	className?: string;
-	onchange?: Function;
+  onChange?: Function;
 	props?: Array<any>;
 };
 

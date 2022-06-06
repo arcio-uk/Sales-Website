@@ -16,17 +16,26 @@ const ContactUs = () => {
           name="email"
           type="email"
           label="Email"
-          onchange={(e: { target: { value: SetStateAction<string>; }; }) => setEmail(e.target.value)}
+          onChange={(e: { target: { value: SetStateAction<string>; }; }) => setEmail(e.target.value)}
         />
         <Textarea
           name="message"
           label="Message"
-          onchange={(e: { target: { value: SetStateAction<string>; }; }) => setMessage(e.target.value)}
+          onChange={(e: { target: { value: SetStateAction<string>; }; }) => setMessage(e.target.value)}
         />
         <div className="flex w-full justify-center m-5">
           <button
             type="submit"
-            className="w-3/4 rounded bg-purple-500 text-center py-2 mx-auto text-zinc-100 font-light text-2xl"
+            className="w-3/4
+                      rounded
+                      bg-purple-500
+                      text-center py-2
+                      mx-auto
+                      text-zinc-100
+                      font-light
+                      text-2xl
+                      hover:animate-submitButtonHoverAnimation
+                      hover:bg-purple-600"
           >
             Submit
           </button>
