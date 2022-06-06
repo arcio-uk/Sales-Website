@@ -92,6 +92,15 @@ const messages = {
       message: 'Message',
       submit: 'Submit',
     },
+    standardLayout: {
+      navbar: {
+
+      },
+      copyright: {
+        first: 'Copyright © 2022 Arcio LLC - Made with ',
+        second: ' By the Arcio Team',
+      },
+    },
   },
 };
 
