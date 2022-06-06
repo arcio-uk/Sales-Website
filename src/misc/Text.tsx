@@ -24,7 +24,64 @@ const messages = {
         text: 'We designed our MIS to be as flexible as possible, allowing for all the potential edge-cases we could think of! We use Role Based Access Control (RBAC) to optimise the ease of use and efficiency of managing the permissions',
       },
     },
-    explanationBoxes: [],
+    explanationBoxes: {
+      attendance: {
+        title: 'Attendance Tracking',
+        description: '',
+      },
+      timetable: {
+        title: 'Timetable Management',
+        description: '',
+      },
+      importExport: {
+        title: 'Easy Data Imports and Exports',
+        description: '',
+      },
+      cloud: {
+        title: 'Cloud Hosting',
+        description: '',
+      },
+      courseAssignment: {
+        title: 'Course assignment',
+        description: '',
+      },
+      signup: {
+        title: 'Institution Registration',
+        description: '',
+      },
+      examManagement: {
+        title: 'Exam Management',
+        description: '',
+      },
+      behaviorManagement: {
+        title: 'Behavior Management',
+        description: '',
+      },
+      guardianPortal: {
+        title: 'Guardian portal',
+        description: '',
+      },
+      eventOrganiser: {
+        title: 'Event Organiser',
+        description: '',
+      },
+      resourceBooker: {
+        title: 'Resource Booker',
+        description: '',
+      },
+      assignmentManager: {
+        title: 'Assignment Manager',
+        description: '',
+      },
+      courseReviews: {
+        title: 'End of Term Course Reviews',
+        description: '',
+      },
+      expenseManager: {
+        title: 'Expense Manager',
+        description: '',
+      },
+    },
   },
 };
 
