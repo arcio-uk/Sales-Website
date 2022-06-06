@@ -1,4 +1,5 @@
 import React from 'react';
+import { AiFillHeart } from 'react-icons/ai';
 import Carosel from '@/ui/Carosel/Carosel';
 import ContactUs from '@/ui/ContactUs';
 import {
@@ -22,6 +23,13 @@ const App = () => (
     </Carosel>
     <IconBoxContainer />
     <ContactUs />
+    <div className="text-center p-3 bg-white">
+      Copyright © 2022 Arcio LLC - Made with
+      {' '}
+      <AiFillHeart className="fill-red-600 inline align-middle" />
+      {' '}
+      By the Arcio Team
+    </div>
   </div>
 );
 
