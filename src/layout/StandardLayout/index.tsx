@@ -4,19 +4,14 @@ import { Outlet } from 'react-router';
 import Text from '@/misc/Text';
 
 import './index.css';
+import NavBar from '@/ui/NavBar';
 
 const staticText = Text.standardLayout;
 
 const StandardLayout = () => (
   <div className="flex flex-col h-screen justify-between">
-    <header className="h-16 bg-gradient-to-r from-orange-400 to-red-400 fixed top-0 w-full text-4xl justify-right flex-col space-x-5 text-white z-10">
-      <div className="flex-1 inline-block align-middle">
-        Helooooooooo, I&#39;m a navigation bar!
-      </div>
-      <div className="flex-1 inline-block align-middle">
-        Helooooooooo, I&#39;m a navigation bar!
-      </div>
-
+    <header>
+      <NavBar />
     </header>
 
     <div className="main">
