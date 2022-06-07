@@ -8,13 +8,15 @@ import {
 
 import Home from '@/pages/Home';
 import StandardLayout from '@/layout/StandardLayout';
+import NotFound from '@/pages/NotFound';
 
 const App = () => (
   <Router>
     <Routes>
       <Route element={<StandardLayout />}>
-        <Route path="/about-us" element={<Home />} />
+        <Route path="/pricing" element={<Home />} />
         <Route path="/" element={<Home />} />
+        <Route path="/*" element={<NotFound />} />
       </Route>
     </Routes>
   </Router>
