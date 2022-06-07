@@ -20,7 +20,7 @@ const StandardLayout = () => (
     </div>
     <div className="h-16" />
     <Outlet />
-    <div className="text-center p-3 bg-gradient-to-r from-orange-400 to-red-400 text-white font-semibold z-10">
+    <div className="text-center p-3 bg-gradient-to-r from-orange-400 to-red-400 text-white font-semibold z-10 bottom-0 absolute w-full">
       {staticText.copyright.first}
       <AiFillHeart className="fill-red-600 inline align-middle" />
       {staticText.copyright.second}
