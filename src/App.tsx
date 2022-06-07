@@ -7,13 +7,14 @@ import {
 } from 'react-router-dom';
 
 import Home from '@/pages/Home';
+import AboutUs from '@/pages/AboutUs';
 import StandardLayout from '@/layout/StandardLayout';
 
 const App = () => (
   <Router>
     <Routes>
       <Route element={<StandardLayout />}>
-        <Route path="/about-us" element={<Home />} />
+        <Route path="/about-us" element={<AboutUs />} />
         <Route path="/" element={<Home />} />
       </Route>
     </Routes>
