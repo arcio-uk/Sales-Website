@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 
 import Home from '@/pages/Home';
+import AboutUs from '@/pages/AboutUs';
 import StandardLayout from '@/layout/StandardLayout';
 import NotFound from '@/pages/NotFound';
 
@@ -15,6 +16,7 @@ const App = () => (
     <Routes>
       <Route element={<StandardLayout />}>
         <Route path="/pricing" element={<Home />} />
+        <Route path="/about-us" element={<AboutUs />} />
         <Route path="/" element={<Home />} />
         <Route path="/*" element={<NotFound />} />
       </Route>
