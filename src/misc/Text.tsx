@@ -102,22 +102,36 @@ const messages = {
       },
     },
     aboutUs: {
+      whoAreWe: {
+        title: 'Who Are We',
+        // * We need to update this at some point!
+        paragraphs: [
+          `Arcio is a startup from 4 students at Royal Holloway, to develop better management systems for schools and universities. 
+               From our personal experience, larger singular systems do not have the flexibility and specific requirements 
+               needed to have just one supplier for their “Management Information System” (MIS).`,
+          `We aim to use our personal experience after going through the educational system to help other students and staff
+               with problems we saw that could be easily be fixed after a little thought had been put into it.`,
+          `Aside from us addressing problems which we can easily fix, we also have a range of ideas to improve stastic readouts
+               for these systems, so teachers and students are recognised and rewarded for doing good work, alongside
+               potential negative trends being identified as soon as possible so they can be rectified ASAP.`],
+      },
+      theTeam: 'The Team',
       people: {
         james: {
           name: 'James',
-          description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium sollicitudin ornare. In purus velit, venenatis sit amet eleifend quis, viverra vitae magna. Etiam egestas, nisl sit amet mollis commodo, enim ipsum faucibus odio, vitae pharetra odio nunc ut tellus. Nunc laoreet tellus id arcu fermentum ullamcorper. Nunc lobortis justo quis metus rhoncus viverra. Quisque luctus lacus quis nisl sagittis malesuada. Curabitur porta, tellus nec pulvinar volutpat, massa turpis posuere diam, ac aliquam dolor enim facilisis augue. Etiam gravida mauris et nibh vehicula, in consectetur metus efficitur. Curabitur varius eu justo at sagittis. Aliquam eleifend viverra neque eget dictum. Quisque scelerisque, quam vitae varius tempus, mauris massa convallis ante, vel elementum massa dui luctus magna. Cras malesuada libero eu nunc pretium porttitor at accumsan neque. Aenean lobortis lacinia massa, ut ornare dui aliquam sit amet.',
         },
         john: {
           name: 'John',
-          description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium sollicitudin ornare. In purus velit, venenatis sit amet eleifend quis, viverra vitae magna. Etiam egestas, nisl sit amet mollis commodo, enim ipsum faucibus odio, vitae pharetra odio nunc ut tellus. Nunc laoreet tellus id arcu fermentum ullamcorper. Nunc lobortis justo quis metus rhoncus viverra. Quisque luctus lacus quis nisl sagittis malesuada. Curabitur porta, tellus nec pulvinar volutpat, massa turpis posuere diam, ac aliquam dolor enim facilisis augue. Etiam gravida mauris et nibh vehicula, in consectetur metus efficitur. Curabitur varius eu justo at sagittis. Aliquam eleifend viverra neque eget dictum. Quisque scelerisque, quam vitae varius tempus, mauris massa convallis ante, vel elementum massa dui luctus magna. Cras malesuada libero eu nunc pretium porttitor at accumsan neque. Aenean lobortis lacinia massa, ut ornare dui aliquam sit amet.',
         },
         danny: {
           name: 'Danny',
-          description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium sollicitudin ornare. In purus velit, venenatis sit amet eleifend quis, viverra vitae magna. Etiam egestas, nisl sit amet mollis commodo, enim ipsum faucibus odio, vitae pharetra odio nunc ut tellus. Nunc laoreet tellus id arcu fermentum ullamcorper. Nunc lobortis justo quis metus rhoncus viverra. Quisque luctus lacus quis nisl sagittis malesuada. Curabitur porta, tellus nec pulvinar volutpat, massa turpis posuere diam, ac aliquam dolor enim facilisis augue. Etiam gravida mauris et nibh vehicula, in consectetur metus efficitur. Curabitur varius eu justo at sagittis. Aliquam eleifend viverra neque eget dictum. Quisque scelerisque, quam vitae varius tempus, mauris massa convallis ante, vel elementum massa dui luctus magna. Cras malesuada libero eu nunc pretium porttitor at accumsan neque. Aenean lobortis lacinia massa, ut ornare dui aliquam sit amet.',
         },
         isaac: {
           name: 'Isaac',
-          description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium sollicitudin ornare. In purus velit, venenatis sit amet eleifend quis, viverra vitae magna. Etiam egestas, nisl sit amet mollis commodo, enim ipsum faucibus odio, vitae pharetra odio nunc ut tellus. Nunc laoreet tellus id arcu fermentum ullamcorper. Nunc lobortis justo quis metus rhoncus viverra. Quisque luctus lacus quis nisl sagittis malesuada. Curabitur porta, tellus nec pulvinar volutpat, massa turpis posuere diam, ac aliquam dolor enim facilisis augue. Etiam gravida mauris et nibh vehicula, in consectetur metus efficitur. Curabitur varius eu justo at sagittis. Aliquam eleifend viverra neque eget dictum. Quisque scelerisque, quam vitae varius tempus, mauris massa convallis ante, vel elementum massa dui luctus magna. Cras malesuada libero eu nunc pretium porttitor at accumsan neque. Aenean lobortis lacinia massa, ut ornare dui aliquam sit amet.',
         },
       },
     },
