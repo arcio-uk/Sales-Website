@@ -30,8 +30,17 @@ const ProfileCard = ({ person }: ProfileCardProps) => (
 		border-slate-500`}
   >
     <img src={Rick} className="rounded-t-2xl" />
+    <div className="text-center text-3xl">
+      {person.name}
+    </div>
+    <div className="hidden md:block">
+      <div className="border-b-2 h-1 border-slate-500 w-11/12 mx-auto my-2 rounded-full" />
+      <div className="text-lg m-1 ">
+        {person.description}
+      </div>
+    </div>
     {person.socials && (
-    <div className="flex justify-center content-center border-2 border-slate-500 max-w-full p-1 m-1 rounded-md">
+    <div className="flex justify-center content-center border-2 border-slate-500 max-w-full max-h-fit p-1 m-1 rounded-md">
       {person.socials.linkedIn && (
       <a href={person.socials.linkedIn} target="_blank" rel="noreferrer">
         <BsLinkedin className="mx-1" />
@@ -54,15 +63,6 @@ const ProfileCard = ({ person }: ProfileCardProps) => (
       )}
     </div>
     )}
-
-    <div className="text-center text-3xl">
-      {person.name}
-    </div>
-    <div className="border-b-2 h-1 border-slate-500 w-11/12 mx-auto my-2 rounded-full" />
-    <div className="text-lg m-1">
-      {person.description}
-    </div>
-
   </div>
 );
 
