@@ -5,7 +5,7 @@ import Text from '@/misc/Text';
 const staticText = Text.aboutUs;
 
 const AboutUs = () => (
-  <div className="text-5xl w-full flex-col justify-center content-center my-5 space-y-5">
+  <div className="text-5xl w-full flex-col justify-center content-center my-5 space-y-8">
     <div className="flex-col flex w-3/4 bg-white rounded-2xl shadow-2xl justify-center content-center m-auto">
       <TitleBar text={staticText.whoAreWe.title} className="bg-white rounded-full w-3/4 m-auto" />
       <div className="text-xl m-5 text-center space-y-5">
