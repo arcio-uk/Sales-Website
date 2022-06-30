@@ -1,37 +1,35 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
+    es2021: true
   },
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-  ],
+  extends: ['plugin:react/recommended', 'airbnb', 'plugin:storybook/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
     ecmaVersion: 'latest',
-    sourceType: 'module',
+    sourceType: 'module'
   },
-  plugins: [
-    'react',
-    '@typescript-eslint',
-  ],
+  plugins: ['react', '@typescript-eslint'],
   rules: {
     'react/function-component-definition': [2, {
       namedComponents: 'arrow-function',
-      unnamedComponents: 'arrow-function',
+      unnamedComponents: 'arrow-function'
     }],
     'linebreak-style': 0,
     'no-plusplus': 0,
-    'no-tabs': ['error', { allowIndentationTabs: true }],
+    'no-tabs': ['error', {
+      allowIndentationTabs: true
+    }],
     'import/extensions': 0,
-    'import/no-unresolved': 0, // TODO: fix at some point
+    'import/no-unresolved': 0,
+    // TODO: fix at some point
     'jsx-a11y/click-events-have-key-events': 0,
     'jsx-a11y/no-static-element-interactions': 0,
-    'react/forbid-prop-types': 0, // TODO: remove and fix these before prod!
+    'react/forbid-prop-types': 0,
+    // TODO: remove and fix these before prod!
     'react/react-in-jsx-scope': 0,
     'react/require-default-props': 0,
     'no-unused-vars': 0,
@@ -44,6 +42,6 @@ module.exports = {
     'react/jsx-props-no-spreading': 0,
     'react/prop-types': 0,
     'no-console': 0,
-    'no-alert': 0,
-  },
+    'no-alert': 0
+  }
 };
