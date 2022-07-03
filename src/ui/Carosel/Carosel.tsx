@@ -5,10 +5,11 @@ import 'keen-slider/keen-slider.min.css';
 import Arrow from './Arrow';
 
 export interface CaroselProps {
-  children: React.ReactNode
+  children: React.ReactNode;
+  slideContainerClass?: string;
 }
 
-const Carosel = ({ children }: CaroselProps) => {
+const Carosel = ({ children, slideContainerClass }: CaroselProps) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
   const [lastChanged, setLastChanged] = useState(Date.now());
@@ -38,7 +39,7 @@ const Carosel = ({ children }: CaroselProps) => {
   return (
     <div>
       <div className="navigation-wrapper shadow-2xl">
-        <div ref={sliderRef} className="keen-slider w-full min-h-[25em]">
+        <div ref={sliderRef} className={`keen-slider w-full min-h-[25em] ${slideContainerClass}`}>
           {children}
         </div>
         {loaded && instanceRef.current && (
