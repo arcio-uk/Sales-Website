@@ -6,12 +6,12 @@
 
 Installation command:
 
-  npm install
+  `npm install`
 
 Dev command:
 
-  vite
+  `vite`
 
 Deploy to GitHub Pages command:
 
-  npm run deploy
+  `npm run deploy`
