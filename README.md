@@ -1,5 +1,8 @@
 # Sales-Website
-This is where the product information will be displayed!
+
+## Credits
+
+ - [@Acorn221](https://github.com/Acorn221) for this repository
 
 Installation command:
 
