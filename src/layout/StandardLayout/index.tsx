@@ -11,7 +11,6 @@ const StandardLayout = () => (
   <div className="flex flex-col h-screen justify-between">
 
     <div className="main">
-      <div className="h-16" />
       <Outlet />
     </div>
 
