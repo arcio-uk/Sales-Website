@@ -15,9 +15,11 @@ import Home from '@/pages/Home';
 const App = () => (
   <Router>
     <Routes>
-      <Route path="Sales-Website/" element={<MISsalesPage />} />
-      <Route path="Sales-Website/about-us" element={<AboutUs />} />
-      <Route path="Sales-Website/*" element={<NotFound />} />
+      <Route element={<StandardLayout />}>
+        <Route path="Sales-Website/" element={<MISsalesPage />} />
+        <Route path="Sales-Website/about-us" element={<AboutUs />} />
+        <Route path="Sales-Website/*" element={<NotFound />} />
+      </Route>
     </Routes>
   </Router>
 );
