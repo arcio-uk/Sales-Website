@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-noninteractive-tabindex */
 import React, { useEffect, useState } from 'react';
 import { useKeenSlider } from 'keen-slider/react';
 import './carosel.css';
@@ -5,10 +6,11 @@ import 'keen-slider/keen-slider.min.css';
 import Arrow from './Arrow';
 
 export interface CaroselProps {
-  children: React.ReactNode
+  children: React.ReactNode;
+  slideContainerClass?: string;
 }
 
-const Carosel = ({ children }: CaroselProps) => {
+const Carosel = ({ children, slideContainerClass }: CaroselProps) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
   const [lastChanged, setLastChanged] = useState(Date.now());
@@ -25,6 +27,15 @@ const Carosel = ({ children }: CaroselProps) => {
     },
   });
 
+  // allow the user to use arrow keys to navigate the carosel
+  const handleKeyUp = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (e.key === 'ArrowLeft') {
+      instanceRef.current?.prev();
+    } else if (e.key === 'ArrowRight') {
+      instanceRef.current?.next();
+    }
+  };
+
   // set a delay for changing the carosel slide
   useEffect(() => {
     if (nextSlideTimeout) window.clearTimeout(nextSlideTimeout);
@@ -38,7 +49,7 @@ const Carosel = ({ children }: CaroselProps) => {
   return (
     <div>
       <div className="navigation-wrapper shadow-2xl">
-        <div ref={sliderRef} className="keen-slider w-full min-h-[25em]">
+        <div ref={sliderRef} className={`keen-slider w-full min-h-[25em] ${slideContainerClass}`} onKeyUp={handleKeyUp} tabIndex={0}>
           {children}
         </div>
         {loaded && instanceRef.current && (
