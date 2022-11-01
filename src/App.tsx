@@ -16,10 +16,9 @@ const App = () => (
   <Router>
     <Routes>
       <Route element={<StandardLayout />}>
-        <Route path="/mis" element={<MISsalesPage />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/*" element={<NotFound />} />
+        <Route path="Sales-Website/" element={<MISsalesPage />} />
+        <Route path="Sales-Website/about-us" element={<AboutUs />} />
+        <Route path="Sales-Website/*" element={<NotFound />} />
       </Route>
     </Routes>
   </Router>

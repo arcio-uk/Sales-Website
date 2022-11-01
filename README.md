@@ -15,3 +15,5 @@ Dev command:
 Deploy to GitHub Pages command:
 
   `npm run deploy`
+
+(to deploy to ghpages, you'll need to change the base in vite config to your repo name)
